@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="300">
+    <meta name="Robots" content="INDEX, FOLLOW">
+    <meta name="author" content="With KMI">
+    <meta name="title" content="건강검진 서비스 - With KMI">
+    <meta name="description" content="With KMI는 건강검진 서비스를 제공합니다. 건강검진 예약과 결과 정보까지 확인하실 수 있습니다.">
+    <meta name="keywords" content="With KMI, 위드케이엠아이, 비타브릿지, vitabridge, 건강검진, 헬스케어서비스, 헬스케어">
+    <meta name="copyright" content="© 2022. KMI All Rights Reserved.">
+    <link rel="canonical" href="{유동 도메인 주소}.withkmi.or.kr">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko-KR">
+    <meta property="og:title" content="건강검진 서비스 - With KMI">
+    <meta property="og:description" content="With KMI는 건강검진 서비스를 제공합니다. 건강검진 예약과 결과 정보까지 확인하실 수 있습니다.">
+
+    <!-- 수정예정 -->
+    <meta name="og:image" content="../../images/kmi_info_img.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="400">
+    <meta property="og:url" content="https://{유동 도메인 주소}.withkmi.or.kr">
+    <meta property="og:site_name" content="WithKMI">
+    <title>건강검진 서비스 - With KMI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/ico/favicon.ico">
+    <link rel="stylesheet" href="../../lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../../lib/jquery-ui/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="../../lib/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Content-Wrapper -->
+        <div class="content-wrapper">
+            <section class="contents">
+                <!-- popup -->
+                <button type="button" class="btn-open-popup" data-toggle="modal" data-target="#popupAgreeTerms01"><span>popup
+                        (약관동의 팝업)</span></button>
+                <div class="c-layer-popup type03" id="popupAgreeTerms01" role="dialog" aria-labelledby="popupAgreeTerms01_Label" aria-modal="true" aria-hidden="true">
+                    <div class="modal-wrap">
+                        <div class="modal-field" tabindex="0">
+                            <div class="c-modal-header">
+                                <div class="c-modal-title-field">
+                                    <h4 class="c-title" id="popupAgreeTerms01_Label">약관동의</h4>
+                                </div>
+                                <button type="button" class="popup-cls-btn"><span class="skip">팝업 닫기</span></button>
+                            </div>
+                            <!-- c-modal-body -->
+                            <div class="c-modal-body">
+                                <div class="c-modal-inner">
+                                    <!-- [ mod(221231) ] 약관 -->
+                                    <div class="main-popup-field">
+                                        <p class="c-terms-txt">※ 본 약관에 동의하셔야 검진 결과 등록 및 추가 서비스 지원이 가능하오니 동의하여 주시기 바랍니다.</p>
+                                        <div class="terms-all-chkbox top terms-co-chk">
+                                            <div class="left">
+                                                <div class="c-chkbox type01">
+                                                    <input type="checkbox" id="termsAllChk_01" class="all-terms-chk">
+                                                    <label for="termsAllChk_01" class="chk-label"><i></i><span>전체동의</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="c-terms-txt">전체 동의는 약관 동의를 한번에 동의할 수 있으며, 개별적으로도 동의를 선택하실 수 있습니다.</div>
+                                        </div>
+                                        <ul class="co-terms-chk-list">
+                                            <li>
+                                                <div class="co-terms-chk-card">
+                                                    <p class="co-terms-tit">개인정보 정보 수집 및 이용동의 (필수 동의)</p>
+                                                    <div class="co-terms-detail terms-scroll">
+                                                        <div class="inner">
+                                                            <div class="terms-row">
+                                                                <div class="cont">
+                                                                    개인정보보호법에 따라 KMI의 WITH KMI 서비스에서 회원 가입 및 건강검진을 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부
+                                                                    시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                                                                    <div class="co-terms-tbl-field">
+                                                                        <table class="co-terms-tbl type01 tbl-terms01">
+                                                                            <caption>
+                                                                                개인정보 정보 수집 및 이용동의 정보 : 수집·이용 목적, 제공받는 목적에 대한 정보
+                                                                            </caption>
+                                                                            <colgroup>
+                                                                                <col style="width:50%">
+                                                                                <col>
+                                                                            </colgroup>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>수집·이용 목적</th>
+                                                                                    <th>제공받는 목적</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <!-- [ mod(230221) ]
+					- tag 변경
+				-->
+                                                                                <tr>
+                                                                                    <th scope="row">회원가입</th>
+                                                                                    <td>성명, 성별, 생년월일, 휴대전화번호 혹은 유선전화번호, 이메일, 주소, 동일인식별정보(CI)</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">본인인증 조회</th>
+                                                                                    <td>성명, 성별, 생년월일, 내외국인 정보, 이동정보통신사 및 휴대전화번호, 휴대폰이나 아이핀을 통한 본인 인증 시 수집되는 CI/DI 값 등 회원 본인 확인을 위해 필요한 식별자 정보</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">검진대상자 등록</th>
+                                                                                    <td>성명, 성별, 생년월일, 휴대전화번호, 이메일</td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <th scope="row">직무스트레스 대상자 등록</th>
+                                                                                    <td>성명, 성별, 생년월일</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">검진 결과상담</th>
+                                                                                    <td>성명, 생년월일, 검진결과 상담을 위한 고객의 요청사항. 검진이력</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">검진 예약</th>
+                                                                                    <td>성명, 성별, 생년월일, 휴대전화번호, 이메일, 고객의 검진예약에 따른 검진 요청사항, 검진이력</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">검진결과 조회</th>
+                                                                                    <td>성명, 생년월일, 본인확인정보(C.I), 이메일, 주소</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">서비스, 오류, 제안, 기타문의</th>
+                                                                                    <td>성명, 이메일</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <b>보유·이용기간</b><br>
+                                                                    KMI는 회원이 탈퇴하는 경우 또는 서비스 종료, 기업검진회원의 경우 위탁계약 종료 또는 위탁사 요청시 개인정보를 지체없이 파기하고 있습니다.<br>
+                                                                    단, 회원에게 개인정보 보관기간에 대해 별도의 동의를 얻은 경우, 또는 법령에서 일정 기간 정보보관 의무를 부과하는 경우에는 해당 기간 동안 개인정보를 안전하게 보관합니다.
+                                                                    <hr>
+                                                                    ※ 보유·이용기간 등 상세한 내용은 개인정보처리방침을 확인해주시기 바랍니다.<br>
+                                                                    ※ 회원은 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 WITH KMI 서비스에 회원가입 및 검진예약시 수집하는 최소한의 개인정보, 즉 필수항목에 대한 수집 및 이용 동의를 거부하실 경우
+                                                                    회원가입 및 검진예약이 어려울 수 있습니다.
+                                                                </div> <!-- [ // mod(230221) ] -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chk-list">
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_01_Agree" name="termsChk_01_01">
+                                                            <label for="termsChk_01_01_Agree" class="chk-label"><i></i><span>(필수)
+                                                                    동의합니다.</span></label>
+                                                        </div>
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_01_disAgree" name="termsChk_01_01">
+                                                            <label for="termsChk_01_01_disAgree" class="chk-label"><i></i><span>동의하지
+                                                                    않습니다.</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="co-terms-chk-card">
+                                                    <p class="co-terms-tit">민감정보 수집 및 이용동의 (필수 동의)</p>
+                                                    <div class="co-terms-detail terms-scroll">
+                                                        <div class="inner">
+                                                            <div class="terms-row">
+                                                                <div class="cont">
+                                                                    개인정보보호법에 따라 KMI의 WITH KMI 서비스에서 회원 가입 및 건강검진을 신청하시는 분께 수집하는 민감정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부
+                                                                    시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                                                                    <div class="co-terms-tbl-field">
+                                                                        <table class="co-terms-tbl type01 tbl-terms01">
+                                                                            <caption>
+                                                                                민감정보 수집 및 이용동의 정보 : 수집·이용 목적, 필수 항목에 대한 정보
+                                                                            </caption>
+                                                                            <colgroup>
+                                                                                <col style="width:50%">
+                                                                                <col>
+                                                                            </colgroup>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>수집·이용 목적</th>
+                                                                                    <th>필수 항목</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <!-- [ mod(230221) ]
+					- tag 변경
+				-->
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th scope="row">검진실시, 결과통보, 결과상담, 진료의뢰 등 건강관리서비스 제공 목적</th>
+                                                                                    <td>질병정보, 문진, 검사내용, 소견, 검진결과와 같은 건강정보</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">검진예약</th>
+                                                                                    <td>검진 요청사항, 복용약, 질환 및 수술 이력</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="row">검진결과 누적관리를 통한 건강관리서비스 제공 목적</th>
+                                                                                    <td>회원정보[고객사명, 이름, 성별, 생년월일, 사번], 검진결과(특수건강진단 포함)</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <b>보유·이용기간</b><br>
+                                                                    KMI는 회원이 탈퇴하는 경우 또는 서비스 종료, 기업검진회원의 경우 위탁계약 종료 또는 위탁사 요청시 개인정보를 지체없이 파기하고 있습니다.<br>
+                                                                    단, 회원에게 개인정보 보관기간에 대해 별도의 동의를 얻은 경우, 또는 법령에서 일정 기간 정보보관 의무를 부과하는 경우에는 해당 기간 동안 개인정보를 안전하게 보관합니다.
+                                                                    <hr>
+                                                                    ※ 보유·이용기간 등 상세한 내용은 개인정보처리방침을 확인해주시기 바랍니다.<br>
+                                                                    ※ 회원은 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 다만 WITH KMI 서비스에서 최소한의 개인정보(민감정보), 즉 필수항목에 대한 수집 및 이용 동의를 거부하실 경우 WITH KMI가 제공하는
+                                                                    종합 건강관리 서비스 제공이 어려울 수 있습니다.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chk-list">
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_02_Agree" name="termsChk_01_02">
+                                                            <label for="termsChk_01_02_Agree" class="chk-label"><i></i><span>(필수)
+                                                                    동의합니다.</span></label>
+                                                        </div>
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_02_disAgree" name="termsChk_01_02">
+                                                            <label for="termsChk_01_02_disAgree" class="chk-label"><i></i><span>동의하지
+                                                                    않습니다.</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="co-terms-chk-card">
+                                                    <p class="co-terms-tit">개인정보의 제3자 제공 동의 (필수 동의)</p>
+                                                    <div class="co-terms-detail terms-scroll">
+                                                        <div class="inner">
+                                                            <div class="terms-row">
+                                                                <div class="cont">
+                                                                    개인정보보호법에 따라 KMI의 WITH KMI 서비스를 이용하는 회원이 자발적으로 자신의 개인정보를 제3자에게 제공하는 경우이며, 이 때에도 KMI는 이용자에게 '개인정보를 제공받는 자, 제공목적, 제공하는
+                                                                    개인정보 항목, 제공받는 개인정보의 보유 및 이용기간'을 사전에 고지하고 이에 대해 명시적·개별적 동의를 다음과 같이 얻습니다.
+                                                                    <br><br>
+                                                                    ※ 상세한 내용은 개인정보처리방침을 확인해주시기 바랍니다. <br>
+                                                                    ※ 회원은 위 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 다만 WITH KMI 서비스에서 수집하는 최소한의 개인정보(민감정보), 특히 필수항목에 대한 제3자 제공 동의를 거부하실 경우 제3자가 제공하는
+                                                                    서비스 이용이 어려울 수 있습니다. <div class="co-terms-tbl-field">
+                                                                        <table class="co-terms-tbl type02 tbl-terms01">
+                                                                            <caption>
+                                                                                개인정보의 제3자 제공 필수동의 정보 : 제공받는 자, 제공받는 목적, 제공하는 개인정보의 항목, 보유 및 이용기간에 대한 정보
+                                                                            </caption>
+                                                                            <colgroup>
+                                                                                <col style="width:50%">
+                                                                                <col>
+                                                                            </colgroup>
+                                                                            <!-- [ mod(230213) ]
+				tag 수정
+			-->
+                                                                            <tbody class="tbody">
+                                                                                <tr>
+                                                                                    <th scope="col">제공받는 자</th>
+                                                                                    <th scope="col">제공받는 목적</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>고객이 지정하는 희망 검진예약 기관 (목록제공)</td>
+                                                                                    <td>건강검진 예약, 서비스 이용, 검진 전 약품 배송</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">제공하는 개인정보의 항목</th>
+                                                                                    <th scope="col">보유 및 이용기간</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>고객사명, 이름, 생년월일, 성별, 휴대전화번호, 예약일, 검진항목, 주소, 이메일, 검진요청사항</td>
+                                                                                    <td>이용 목적 달성 시 또는 보유기간 경과시</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chk-list">
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_03_Agree" name="termsChk_01_03">
+                                                            <label for="termsChk_01_03_Agree" class="chk-label"><i></i><span>(필수)
+                                                                    동의합니다.</span></label>
+                                                        </div>
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_03_disAgree" name="termsChk_01_03">
+                                                            <label for="termsChk_01_03_disAgree" class="chk-label"><i></i><span>동의하지
+                                                                    않습니다.</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="co-terms-chk-card">
+                                                    <p class="co-terms-tit">개인정보의 제3자 제공 동의 (선택 동의)</p>
+                                                    <div class="co-terms-detail terms-scroll">
+                                                        <div class="inner">
+                                                            <div class="terms-row">
+                                                                <div class="cont">
+                                                                    개인정보보호법에 따라 KMI의 WITH KMI 서비스를 이용하는 회원이 자발적으로 자신의 개인정보를 제3자에게 제공하는 경우이며, 이 때에도 KMI는 이용자에게 '개인정보를 제공받는 자, 제공목적, 제공하는
+                                                                    개인정보 항목, 제공받는 개인정보의 보유 및 이용기간'을 사전에 고지하고 이에 대해 명시적·개별적 동의를 다음과 같이 얻습니다.
+                                                                    <br><br>
+                                                                    ※ 상세한 내용은 개인정보처리방침을 확인해주시기 바랍니다. <br>
+                                                                    ※ 회원은 위 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 다만 WITH KMI 서비스에서 수집하는 최소한의 개인정보(민감정보), 특히 필수항목에 대한 제3자 제공 동의를 거부하실 경우 제3자가 제공하는
+                                                                    서비스 이용이 어려울 수 있습니다.
+                                                                    <div class="co-terms-tbl-field">
+                                                                        <table class="co-terms-tbl type02 tbl-terms01">
+                                                                            <caption>
+                                                                                개인정보의 제3자 제공 선택동의 정보 : 제공받는 자, 제공받는 목적, 제공하는 개인정보의 항목, 보유 및 이용기간에 대한 정보
+                                                                            </caption>
+                                                                            <colgroup>
+                                                                                <col style="width:50%">
+                                                                                <col>
+                                                                            </colgroup>
+                                                                            <!-- [ mod(230221) ]
+				- tag변경
+			-->
+                                                                            <tbody class="tbody">
+                                                                                <tr>
+                                                                                    <th scope="col">제공받는 자</th>
+                                                                                    <th scope="col">제공받는 목적</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>회원이 소속된 기업 보건관리자 (건강검진 관리자) (목록 제공)</td>
+                                                                                    <td>보건관리자의 임직원 건강관리용</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">제공하는 개인정보의 항목</th>
+                                                                                    <th scope="col">보유 및 이용기간</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>회원정보[고객사명, 이름, 성별, 생년월일, 사번], 검진결과(특수건강진단 포함)</td>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chk-list">
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_04_Agree" name="termsChk_01_04">
+                                                            <label for="termsChk_01_04_Agree" class="chk-label"><i></i><span>(선택) 동의합니다</span></label>
+                                                        </div>
+                                                        <div class="c-chkbox type01">
+                                                            <input type="radio" id="termsChk_01_04_disAgree" name="termsChk_01_04">
+                                                            <label for="termsChk_01_04_disAgree" class="chk-label"><i></i><span>동의하지
+                                                                    않습니다.</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //  c-modal-body -->
+
+                            <div class="c-modal-footer">
+                                <div class="inner">
+                                    <div class="buttons">
+                                        <button type="button" class="co-btn is-outline-navy-1 popup-cls-btn"><span>닫기</span></button>
+                                        <button type="button" class="co-btn bg-navy-1"><span>확인</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- popup -->
+                <button type="button" class="btn-open-popup" data-toggle="modal" data-target="#alertAgreeTerms01_01">
+                    <span>popup (검진 기관에 검진 결과 등록을 요청하였습니다, 검진 결과 등록 처리는 검진기관에 따라 다소 시간이 소요될 수 있습니다.)</span>
+                </button>
+                <!-- 버튼 연결  부분 사용 -->
+
+                <div class="c-layer-popup type01" id="alertAgreeTerms01_01" role="dialog" aria-labelledby="alertAgreeTerms01_01_Label" aria-modal="true" aria-hidden="true">
+                    <div class="modal-wrap">
+                        <div class="modal-field" tabindex="0">
+                            <div class="c-modal-body">
+                                <div class="c-modal-inner">
+                                    <h4 class="c-title skip" id="alertAgreeTerms01_01_Label">검진결과 등록 요청</h4>
+                                    <p>검진 기관에 검진 결과 등록을 요청하였습니다. <br>검진 결과 등록 처리는 검진기관에 따라 다소 시간이 소요될 수 있습니다.</p>
+                                </div>
+                            </div>
+
+                            <div class="c-modal-footer">
+                                <div class="inner">
+                                    <div class="buttons">
+                                        <button class="co-btn bg-navy-1 popup-cls-btn"><span>확인</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- // Contents -->
+    </div>
+    <!-- // Content-Wrapper -->
+    <script src="../../lib/swiper/js/swiper.js"></script>
+    <script src="../../js/common.js"></script>
+</body>
+
+</html>

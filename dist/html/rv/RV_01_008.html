@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="300">
+    <meta name="Robots" content="INDEX, FOLLOW">
+    <meta name="author" content="With KMI">
+    <meta name="title" content="건강검진 서비스 - With KMI">
+    <meta name="description" content="With KMI는 건강검진 서비스를 제공합니다. 건강검진 예약과 결과 정보까지 확인하실 수 있습니다.">
+    <meta name="keywords" content="With KMI, 위드케이엠아이, 비타브릿지, vitabridge, 건강검진, 헬스케어서비스, 헬스케어">
+    <meta name="copyright" content="© 2022. KMI All Rights Reserved.">
+    <link rel="canonical" href="{유동 도메인 주소}.withkmi.or.kr">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko-KR">
+    <meta property="og:title" content="건강검진 서비스 - With KMI">
+    <meta property="og:description" content="With KMI는 건강검진 서비스를 제공합니다. 건강검진 예약과 결과 정보까지 확인하실 수 있습니다.">
+
+    <!-- 수정예정 -->
+    <meta name="og:image" content="../../images/kmi_info_img.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="400">
+    <meta property="og:url" content="https://{유동 도메인 주소}.withkmi.or.kr">
+    <meta property="og:site_name" content="WithKMI">
+    <title>건강검진 서비스 - With KMI</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/ico/favicon.ico">
+    <link rel="stylesheet" href="../../lib/swiper/css/swiper.css">
+    <link rel="stylesheet" href="../../lib/jquery-ui/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="../../lib/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Content-Wrapper -->
+        <div class="content-wrapper">
+            <!-- Contents -->
+
+            <!--  button data-target === popup id -->
+            <!--  aria-labelledby === title id -->
+            <button type="button" class="btn-open-popup" data-toggle="modal" data-target="#popupDetailCheckupCompare01"><span>open popup</span></button>
+
+            <!-- [ mod(230119) ] -->
+            <div class="c-layer-popup compare" id="popupDetailCheckupCompare01" role="dialog" aria-labelledby="popupDetailCheckupCompare01_Label" aria-modal="true" aria-hidden="true">
+                <div class="modal-wrap">
+                    <div class="modal-field" tabindex="0">
+                        <div class="c-modal-header">
+                            <div class="c-modal-title-field">
+                                <h4 class="c-title" id="popupDetailCheckupCompare01_Label">검진 세부 항목 비교</h4>
+                            </div>
+                            <button type="button" class="popup-cls-btn"><span class="skip">팝업 닫기</span></button>
+                        </div>
+                        <!-- c-modal-body -->
+                        <div class="c-modal-body ">
+                            <div class="c-modal-inner">
+                                <div class="co-table-field tbl-campare-fix-field">
+                                    <div class="co-table tbl-center co-tbl-head-fixed">
+                                        <table class="table">
+                                            <caption>
+                                                검진 세부 항목 비교 : 대분류, 중분류, 검사항목, 관련질환, 병원별 건강검진 진행항목 및 개인 추가금에 대한 정보
+                                            </caption>
+                                            <colgroup>
+                                                <col style="min-width:140px">
+                                                <col style="min-width:140px">
+                                                <col style="min-width:140px">
+                                                <col style="min-width:320px">
+                                                <col style="width:200px; min-width:200px;">
+                                                <col style="width:200px; min-width:200px;">
+                                                <col style="width:200px; min-width:200px;">
+                                                <col style="width:200px; min-width:200px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2">대분류</th>
+                                                    <th rowspan="2">중분류</th>
+                                                    <th rowspan="2">검사항목</th>
+                                                    <th rowspan="2">관련질환</th>
+                                                    <th>
+                                                        KMI 광화문센터 <br>
+                                                        <p class="title-sub">정밀종합검진 일반형</p>
+                                                    </th>
+                                                    <th>
+                                                        상품비교 선택 항목이 없습니다.
+                                                    </th>
+                                                    <th>
+                                                        강북삼성병원 <br>
+                                                        <p class="title-sub">종합검진</p>
+                                                    </th>
+                                                    <th>
+                                                        하나로의료재단 강북센터 <br>
+                                                        <p class="title-sub">정밀종합검진</p>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="peronal-add-price">
+                                                            <span>개인추가금</span>
+                                                            <p class="price"><em>0</em> 원</p>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="peronal-add-price">
+                                                            <span>개인추가금</span>
+                                                            <p class="price"><em>100,000,000</em> 원</p>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="peronal-add-price">
+                                                            <span>개인추가금</span>
+                                                            <p class="price"><em>100,000</em> 원</p>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="peronal-add-price">
+                                                            <span>개인추가금</span>
+                                                            <p class="price"><em>0</em> 원</p>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="mainCategoryCp" rowspan="13">기초검사</td>
+                                                    <td rowspan="6">기초검사</td>
+                                                    <td>신장</td>
+                                                    <td>신장</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>체중</td>
+                                                    <td>체중</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>혈압</td>
+                                                    <td>혈압</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>허리둘레</td>
+                                                    <td>허리둘레</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>체질량지수,비만도(BMI)</td>
+                                                    <td>체질량지수,비만도(BMI)</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>맥박수</td>
+                                                    <td>맥박수</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="4">청력검사</td>
+                                                    <td>500(좌, 우)Hz</td>
+                                                    <td>난청의 조기발견, 청력장애</td>
+                                                    <td class=" tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000(좌, 우)Hz</td>
+                                                    <td>난청의 조기발견, 청력장애</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2000(좌, 우)Hz</td>
+                                                    <td>난청의 조기발견, 청력장애</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4000(좌, 우)Hz</td>
+                                                    <td>난청의 조기발견, 청력장애</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>시력검사</td>
+                                                    <td>시력검사(좌, 우)</td>
+                                                    <td>시력검사</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>의사문진</td>
+                                                    <td>의사문진(상담)</td>
+                                                    <td>과거 및 현재 의 건강상태,검진결과 판독</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>흉부검사</td>
+                                                    <td>흉부X-ray촬영</td>
+                                                    <td>폐결핵, 폐기종, 기관지염, 폐암</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mainCategoryCp" rowspan="31" id="31">혈액검사</td>
+                                                    <td rowspan="11" id="11">간기능</td>
+                                                    <td>총단백(Total protein)</td>
+                                                    <td>영양상태, 간기능장애</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>알부민(Albumin)</td>
+                                                    <td>심근경색증, 폐쇄성 황달</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>글로불린(Globulin)</td>
+                                                    <td>간경변, 알콜성간장애</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A/G 비율(A/G Ratio)</td>
+                                                    <td>골육종, 골수암</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>총빌리루빈(T-Bil)</td>
+                                                    <td>원발성 간암</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>직접빌리루빈(D-Bil)</td>
+                                                    <td>원발성 간암</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>간접빌리루빈(I-Bil)</td>
+                                                    <td>급만성간염, 담도질환</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ALP</td>
+                                                    <td>간경화,급만성 담낭염</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SGOT(AST)</td>
+                                                    <td>지방간</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SGPT(ALT)</td>
+                                                    <td>용인성황달</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>γ-GTP</td>
+                                                    <td>급성,전이성 간염, 알콜성지방간</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="4">고지혈증이상지질혈증</td>
+                                                    <td>총콜레스테롤(T-Cholesterol)</td>
+                                                    <td>고지방혈증, 간경변, 관상동맥경화</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HDL-Cholesterol</td>
+                                                    <td>간실질장애, 동맥경화증, 알콜성지방간</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LDL-Cholesterol</td>
+                                                    <td>고지혈증, 동맥경화, 고혈압</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>중성지방(Triglyceride)</td>
+                                                    <td>기타 지질대사</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">당뇨검사</td>
+                                                    <td>공복혈당</td>
+                                                    <td>당뇨병</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HbA1c(당화혈색소)</td>
+                                                    <td>당뇨 및 당뇨병 전기를 선별하고 진단하기 위한 검사</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>췌장기능</td>
+                                                    <td>Amylase(아밀라제)</td>
+                                                    <td>급만성 췌장염</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="4">신장기능</td>
+                                                    <td>사구체여과율(GFR)</td>
+                                                    <td>신장의 기능 평가</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>요소질소</td>
+                                                    <td>신부전증, 뇨독증</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>크레아티닌</td>
+                                                    <td>신우신염, 통풍성 관절염</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BUN/Cr 비율</td>
+                                                    <td>신기능장애, 기타 신장질환</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>철결핍성빈형</td>
+                                                    <td>Fe</td>
+                                                    <td>철 결핍성 빈혈</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">전해질</td>
+                                                    <td>Ca(혈중 칼슘)</td>
+                                                    <td>신장병, 당뇨병, 내분비질환, 골질환 등</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phosphorus(인)</td>
+                                                    <td>신장병, 당뇨병, 내분비질환, 골질환 등</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>통풍</td>
+                                                    <td>요산</td>
+                                                    <td>요로감염</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>류마티스질환</td>
+                                                    <td>RF</td>
+                                                    <td>류마티스성 관절염, 통풍성 관절염</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">B형간염</td>
+                                                    <td>B형간염 표면항원(HBs Ag)</td>
+                                                    <td>B형간염 항체 형성 여부</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B형간염 표면항체(HBs Ab)</td>
+                                                    <td>B형간염 항체 형성 여부</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>매독</td>
+                                                    <td>RPR정밀</td>
+                                                    <td>매독 선별</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CBCDiff16종</td>
+                                                    <td>CBC+Diff</td>
+                                                    <td>각종 빈혈, 백혈병, 알러지성 감염 등 혈액질환 검사</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mainCategoryCp">혈액검사소변</td>
+                                                    <td>소변검사URIN10종</td>
+                                                    <td>URIN10종</td>
+                                                    <td>신장염, 당요병, 요로 감염, 방광염 등 전신적인 내분비/대사 질환</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mainCategoryCp" rowspan="6">장비검사</td>
+                                                    <td>안저검사</td>
+                                                    <td>안저검사(좌, 우)</td>
+                                                    <td>녹내장 유무, 안압상승</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>안압검사</td>
+                                                    <td>안압검사(좌, 우)</td>
+                                                    <td>고혈압, 당뇨성 안저변화, 시신경염</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>심전도검사</td>
+                                                    <td>심전도검사(EKG)</td>
+                                                    <td>부정맥, 협심증, 심근경색증, 심장기능장애</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">부인과검사</td>
+                                                    <td>유방촬영(MAMMO)</td>
+                                                    <td>유방암, 유선암 등 유방관련 질환</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>자궁경부세포진검사(PAP)</td>
+                                                    <td>자궁경부암, 질염 등</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>초음파</td>
+                                                    <td>상복부초음파(복부초음파)</td>
+                                                    <td>복부(간,담낭,췌장,신장,비장등)관련 급, 만성 질환 및 염증, 종양, 결석, 형태이상 등</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mainCategoryCp" rowspan="4>기타검사</td>
+													<td class=" midCategoryCp">치과검진</td>
+                                                    <td>치과검진</td>
+                                                    <td>치주질환</td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="3">기타검사기타</td>
+                                                    <td>마음검진</td>
+                                                    <td></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>건강성적표</td>
+                                                    <td></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>식권</td>
+                                                    <td></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-check"></i></td>
+                                                    <td class="tbl-in-cont"><i class="ico-type01 t-i-close02"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">선택검사1</td>
+                                                    <td>위내시경(수면), <br>위내시경(일반), <br>펩시노겐Ⅰ,Ⅱ(위암), <br>위장조영촬영 텍1</td>
+                                                    <td>위내시경(수면) <br>위내시경(일반), <br>펩시노겐Ⅰ,Ⅱ(위암), <br>위장조영촬영 텍1</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">선택검사2</td>
+                                                    <td>유전자 일반5종-뇌졸중, <br>심근경색, <br>치매(알츠하이머), <br>파킨슨, <br>2형당뇨, <br>QuantiFERON-TB(잠복결핵), <br>NK
+                                                        세포 활성, <br>OAβ검사(올리고머 베타-아밀로이드_알츠하이머위험도검사), <br>심장석회화(칼슘스코어링)CT, <br>알레르기 107종,
+                                                        <br>활성산소+항산화력검사, <br>L-SPINE CT, <br>C-SPINE CT, <br>LUNG CT, <br>BRAIN CT 택 1
+                                                    </td>
+                                                    <td>유전자 일반5종-뇌졸중, <br>심근경색, <br>치매(알츠하이머), <br>파킨슨, <br>2형당뇨, <br>QuantiFERON-TB(잠복결핵), <br>NK
+                                                        세포 활성, <br>OAβ검사(올리고머 베타-아밀로이드_알츠하이머위험도검사), <br>심장석회화(칼슘스코어링)CT, <br>알레르기 107종,
+                                                        <br>활성산소+항산화력검사, <br>L-SPINE CT, <br>C-SPINE CT, <br>LUNG CT, <br>BRAIN CT 텍1
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">선택검사3</td>
+                                                    <td>유전자 일반5종-뇌졸중, <br>심근경색, <br>치매(알츠하이머), <br>파킨슨, <br>2형당뇨, <br>QuantiFERON-TB(잠복결핵), <br>NK
+                                                        세포 활성, <br>OAβ검사(올리고머 베타-아밀로이드_알츠하이머위험도검사), <br>심장석회화(칼슘스코어링)CT, <br>알레르기 107종,
+                                                        <br>활성산소+항산화력검사, <br>L-SPINE CT, <br>C-SPINE CT, <br>LUNG CT, <br>BRAIN CT 택 1
+                                                    </td>
+                                                    <td>유전자 일반5종-뇌졸중, <br>심근경색, <br>치매(알츠하이머), <br>파킨슨, <br>2형당뇨, <br>QuantiFERON-TB(잠복결핵), <br>NK
+                                                        세포 활성, <br>OAβ검사(올리고머 베타-아밀로이드_알츠하이머위험도검사), <br>심장석회화(칼슘스코어링)CT, <br>알레르기 107종,
+                                                        <br>활성산소+항산화력검사, <br>L-SPINE CT, <br>C-SPINE CT, <br>LUNG CT, <br>BRAIN CT 택 1
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">선택검사4</td>
+                                                    <td>유전자 일반5종-뇌졸중, <br>심근경색, <br>치매(알츠하이머), <br>파킨슨, <br>2형당뇨, <br>QuantiFERON-TB(잠복결핵), <br>NK
+                                                        세포 활성, <br>OAβ검사(올리고머 베타-아밀로이드_알츠하이머위험도검사), <br>심장석회화(칼슘스코어링)CT, <br>알레르기 107종,
+                                                        <br>활성산소+항산화력검사, <br>L-SPINE CT, <br>C-SPINE CT, <br>LUNG CT, <br>BRAIN CT 택 1
+                                                    </td>
+                                                    <td>유전자 일반5종-뇌졸중, <br>심근경색, <br>치매(알츠하이머), <br>파킨슨, <br>2형당뇨, <br>QuantiFERON-TB(잠복결핵), <br>NK
+                                                        세포 활성, <br>OAβ검사(올리고머 베타-아밀로이드_알츠하이머위험도검사), <br>심장석회화(칼슘스코어링)CT, <br>알레르기 107종,
+                                                        <br>활성산소+항산화력검사, <br>L-SPINE CT, <br>C-SPINE CT, <br>LUNG CT, <br>BRAIN CT 택 1
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //  c-modal-body -->
+
+                        <div class="c-modal-footer">
+                            <div class="inner">
+                                <div class="buttons">
+                                    <button type="button" class="co-btn is-outline-navy-1 popup-cls-btn"><span>취소</span></button>
+                                    <button type="button" class="co-btn bg-navy-1"><span>확인</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- = type03  -->
+                <!-- [ // layer popup] -->
+            </div>
+            <!-- [ // mod(230119) ] -->
+            <!-- // Contents -->
+        </div>
+        <!-- // Content-Wrapper -->
+    </div>
+    <script src="../../lib/swiper/js/swiper.js"></script>
+    <script src="../../js/common.js"></script>
+
+
+</body>
+
+</html>
